@@ -1,10 +1,12 @@
 # Android Job Tester
 
+![](screenshot.png)
+
 Sample application which uses [JobScheduler](https://developer.android.com/reference/kotlin/android/app/job/JobScheduler) to schedule a [JobInfo](https://developer.android.com/reference/kotlin/android/app/job/JobInfo) using the [JOB_SCHEDULER_SERVICE](https://developer.android.com/reference/kotlin/android/content/Context.html#JOB_SCHEDULER_SERVICE:kotlin.String) to execute a [JobService](https://developer.android.com/reference/kotlin/android/app/job/JobService) on a [concurrent thread](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.concurrent/thread.html).
 
 ## Logcat Output
 
-* Click "Schedule Job" button:
+* Click **Schedule Job** button:
 
 ```
 2020-11-05 08:28:51.730 4218-4218/com.example.jobtester D/MainActivity: scheduleJob: begin
@@ -23,7 +25,7 @@ Sample application which uses [JobScheduler](https://developer.android.com/refer
 2020-11-05 08:29:01.786 4218-4273/com.example.jobtester D/BackgroundJobService$doBackgroundWork: doBackgroundWork: finished
 ```
 
-* Click "Schedule Job" button, then click "Cancel Job" button:
+* Click **Schedule Job** button, then click **Cancel Job** button:
 
 ```
 2020-11-05 08:29:19.128 4218-4218/com.example.jobtester D/MainActivity: scheduleJob: begin
