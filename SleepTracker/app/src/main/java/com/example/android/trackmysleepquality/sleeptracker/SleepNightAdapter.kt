@@ -60,8 +60,7 @@ class SleepNightAdapter: ListAdapter<SleepNight, SleepNightAdapter.ViewHolder>(S
         }
 
         override fun areItemsTheSame(oldItem: SleepNight, newItem: SleepNight): Boolean {
-            return oldItem == newItem
+            return oldItem.nightId == newItem.nightId
         }
-
     }
 }
